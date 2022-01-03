@@ -38,7 +38,7 @@ class User(AbstractBaseUser):
     def __str__(self):
         return self.phone
 
-    def has_model_perms(self, app_label):
+    def has_module_perms(self, app_label):
         return self.is_staff
 
     def has_perm(self, obj=None):
